@@ -1,0 +1,56 @@
+.main{
+  width: 100%;
+  height: 100vh;
+  background: #3500D3;
+}
+.container{
+  color: white;
+}
+.homeLeft{
+  max-width: 400px;
+}
+.mainHeading{
+  margin: 0;
+  margin-top: 150px;
+  font-weight: 300;
+  font-size: 48px;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.h4{
+  font-size: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 200;
+  margin-top: 70px;
+}
+.homeRight{
+  max-width: 400px;
+}
+.img{
+  width: 75%;
+  -webkit-transform: rotate(-40deg);
+    -moz-transform: rotate(-40deg);
+    -o-transform: rotate(-40deg);
+    -ms-transform: rotate(-40deg);
+    transform: rotate(-40deg);
+    margin-top: 10em;
+}
+button:hover{
+  cursor: pointer;
+  color: black;
+  transition: 0.5s;
+}
+@media (max-width: 700px){
+  .mainHeading{
+    margin-top: 50px;
+  }
+.img{
+  margin-top: 2em;
+}
+
+}
+.btn{
+  background: rgb(45, 45, 207) !important;
+  border-radius: 7px !important;
+  color: white !important;
+}

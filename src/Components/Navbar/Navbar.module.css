@@ -1,0 +1,10 @@
+.logo{
+    width: 60px;
+}
+.linkColor{
+    color: white !important;
+    text-decoration: none;
+}
+.active{
+    color: black !important;
+}
