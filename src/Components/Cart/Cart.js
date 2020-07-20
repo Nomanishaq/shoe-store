@@ -1,6 +1,9 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 const Cart = () =>{
+    useEffect(() => {
+        document.title= 'Shoe Store | Cart'
+      },[])
     return (
         <div>
             

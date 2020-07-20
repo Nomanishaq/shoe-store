@@ -1,0 +1,29 @@
+.container{
+    width: 100%;
+   background: linear-gradient(90deg, rgb(35, 42, 107) 10%, rgb(97, 108, 187) 100%)
+}
+.productContainer{
+    align-items: center;
+    padding: 35px;
+}
+.productItem{
+    background: #f5f5f5 !important;
+    border-radius: 10px !important;
+}
+
+.productTitle{
+    text-decoration: none ;
+    color: black;
+}
+.productTitle:hover{
+    cursor: pointer;
+    color:  rgb(97, 108, 187) !important;
+    transition: 0.5s;
+}
+.btn{
+    margin-top: 13px !important;
+    background: linear-gradient(90deg, rgb(35, 42, 107) 10%, rgb(97, 108, 187) 100%);
+    color: white !important;
+    border-radius: 4px !important;
+    width: 160px;
+}

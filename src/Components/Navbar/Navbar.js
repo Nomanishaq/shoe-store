@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import {IconButton, Button,Typography, Toolbar,AppBar} from '@material-ui/core/';
 import LocalGroceryStoreIcon from '@material-ui/icons/LocalGroceryStore';
-import logo from '../../img/adidas-logo.png';
+import logo from '../../img/logo.png';
 import {NavLink} from 'react-router-dom';
 import style from './Navbar.module.css';
 
@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   inherit: {
-    background: '#3500D3',
+    background: 'linear-gradient(90deg, rgb(35, 42, 107) 10%, rgb(97, 108, 187) 100%)',
     borderBottom: '1px solid white !important',
     height: '80px'
   }
@@ -32,7 +32,7 @@ let Navbar = ()=> {
       <AppBar position="static">
         <Toolbar className={classes.inherit}> 
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-          <img src={logo} alt="shoe store" className={style.logo} />
+            <NavLink to="/"><img src={logo} alt="shoe store" className={style.logo} /></NavLink>
           </IconButton>
           <Typography variant="h6" className={classes.title}>
           </Typography>
