@@ -6,14 +6,14 @@ import NotFound from '../NotFound/NotFound';
 import {Container} from '@material-ui/core';
 
 const SingleProduct=()=> {
+    const {slug} = useParams();
+    const shoe = products[slug];
     // const [productDetails, setProductDetails] = useState();
     useEffect(()=>{
-        document.title=`Shoe Store | Product `;
+        document.title=`Shoe Store | Product | ${shoe.name}`;
     },[]);
     
-    const {slug} = useParams();
 
-    const shoe = products[slug];
     if (!shoe){
         return <NotFound/>
       }
