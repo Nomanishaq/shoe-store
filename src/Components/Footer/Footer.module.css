@@ -1,7 +1,7 @@
 .footerContainer{
     /* width: 100%; */
     background: linear-gradient(90deg, rgb(35, 42, 107) 10%, rgb(97, 108, 187) 100%) !important;
-    height: 10vh;
+    height: 12vh;
     border-top: 1px solid white !important;
 }
 .footerContainer p{

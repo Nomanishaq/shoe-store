@@ -1,10 +1,11 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import {IconButton, Button,Typography, Toolbar,AppBar} from '@material-ui/core/';
 import LocalGroceryStoreIcon from '@material-ui/icons/LocalGroceryStore';
 import logo from '../../img/nike.png';
 import {NavLink} from 'react-router-dom';
 import style from './Navbar.module.css';
+import Context from '../../CountContext';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -26,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
 
 let Navbar = ()=> {
   const classes = useStyles();
-
+  let cartValue = useContext(Context);
   return (
     <div className={classes.root}>
       <AppBar position="fixed">
@@ -38,7 +39,7 @@ let Navbar = ()=> {
           </Typography>
           <Button color="inherit"><NavLink to="/" className={style.linkColor}>Home</NavLink></Button>
           <Button color="inherit"><NavLink to="/Product" className={style.linkColor} activeClassName={style.active}>Shop</NavLink></Button>
-          <Button title="cart" color="inherit"><NavLink to="/Product" className={style.linkColor} activeClassName={style.active}>{<LocalGroceryStoreIcon/>}</NavLink></Button>
+  <Button title="cart" color="inherit"><NavLink to="/Product" className={style.linkColor} activeClassName={style.active}>{<LocalGroceryStoreIcon/>}<span>{cartValue}</span></NavLink></Button>
 
         </Toolbar>
       </AppBar>
