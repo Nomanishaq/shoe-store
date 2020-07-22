@@ -11,7 +11,7 @@ const SingleProduct=()=> {
     // const [productDetails, setProductDetails] = useState();
     useEffect(()=>{
         document.title=`Shoe Store | Product | ${shoe.name}`;
-    },[]);
+    });
     
 
     if (!shoe){
