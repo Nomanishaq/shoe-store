@@ -1,6 +1,20 @@
 .container{
     width: 100%;
-   background: linear-gradient(90deg, rgb(35, 42, 107) 10%, rgb(97, 108, 187) 100%)
+   background: linear-gradient(90deg, rgb(35, 42, 107) 10%, rgb(97, 108, 187) 100%);
+  margin-top: 5em;
+  text-align: center;
+}
+.pageTitleContainer{
+    width: 100%;
+    height: 20vh;
+    background:linear-gradient(90deg, rgb(35, 42, 107) 10%, rgb(97, 108, 187) 100%);
+}
+.pageTitle{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: 200;
+    
 }
 .productContainer{
     align-items: center;
@@ -10,7 +24,6 @@
     background: #f5f5f5 !important;
     border-radius: 10px !important;
 }
-
 .productTitle{
     text-decoration: none ;
     color: black;
@@ -24,6 +37,13 @@
     margin-top: 13px !important;
     background: linear-gradient(90deg, rgb(35, 42, 107) 10%, rgb(97, 108, 187) 100%);
     color: white !important;
+    border-radius: 4px !important;
+    width: 160px;
+}
+.cartAdded{
+    margin-top: 13px !important;
+    background:#bebaba !important;
+    color: #f3f3f3 !important;
     border-radius: 4px !important;
     width: 160px;
 }

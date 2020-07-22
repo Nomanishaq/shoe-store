@@ -3,6 +3,9 @@
   height: 100vh;
   background-size: cover;
   background: linear-gradient(90deg, rgb(35, 42, 107) 10%, rgb(97, 108, 187) 100%);
+  text-align: center;
+  margin-top: 5em;
+
 }
 .container{
   color: white;

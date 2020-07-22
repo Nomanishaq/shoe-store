@@ -1,6 +1,6 @@
 .logo{
     width: 70px;
-    transform: rotate(5deg)
+    margin-left: 15px;
 }
 .linkColor{
     color: white !important;
